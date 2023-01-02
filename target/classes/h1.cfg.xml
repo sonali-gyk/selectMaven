@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM
+ "classpath://org/hibernate/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/demo1</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">sonali</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="show_mysql">true</property>
+		<mapping class="com.oneToone.Customer"></mapping>
+		<mapping class="com.oneToone.Transaction1"></mapping>
+		
+	</session-factory>
+</hibernate-configuration>
